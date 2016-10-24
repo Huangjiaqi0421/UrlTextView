@@ -1,6 +1,7 @@
 package com.jaking.urltextview;
 
 import android.content.Context;
+import android.content.Intent;
 import android.text.Html;
 import android.text.Spannable;
 import android.text.SpannableStringBuilder;
@@ -11,7 +12,6 @@ import android.text.style.URLSpan;
 import android.util.AttributeSet;
 import android.view.View;
 import android.widget.TextView;
-import android.widget.Toast;
 
 /**
  * Created by Administrator on 2016/10/21.
@@ -68,7 +68,11 @@ public class UrlTextView extends TextView {
 
         @Override
         public void onClick(View widget) {
-            Toast.makeText(ctx, mUrl, Toast.LENGTH_SHORT).show();
+//            Toast.makeText(ctx, mUrl, Toast.LENGTH_SHORT).show();
+
+            Intent intent=new Intent(ctx,WebContentActivity.class);
+            intent.putExtra("url",mUrl);
+            ctx.startActivity(intent);
         }
     }
 }
