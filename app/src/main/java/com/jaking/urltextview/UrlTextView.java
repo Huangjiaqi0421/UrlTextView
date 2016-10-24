@@ -1,7 +1,6 @@
 package com.jaking.urltextview;
 
 import android.content.Context;
-import android.graphics.Color;
 import android.text.Html;
 import android.text.Spannable;
 import android.text.SpannableStringBuilder;
@@ -70,7 +69,6 @@ public class UrlTextView extends TextView {
         @Override
         public void onClick(View widget) {
             Toast.makeText(ctx, mUrl, Toast.LENGTH_SHORT).show();
-            widget.setBackgroundColor(Color.parseColor("#00555555"));
         }
     }
 }

@@ -11,9 +11,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         textView= (UrlTextView) findViewById(R.id.textview);
-        String url = "This is a page with lots of URLs. <a href=\"http://jb51.net\">jb51.net</> " +
-                "This left is a very good blog. There are so many great blogs there.You can find what" +
-                "you want in that blog. <a href=\"http://www.baidu.com\">超链接点击事件</a> The Next Link is <a href=\"http://www.google.com.hk\">Google HK</a>";
+        String url = "这是一个简单的可识别网页链接的demo。<a href=\"https://github.com/S-MILE-S/UrlTextView\">click here to get code</a>, code is very simple.or点击<a href=\"http://www.google.com\">这里</a>打开GOOGLE";
         textView.setHtml(url);
     }
 }
